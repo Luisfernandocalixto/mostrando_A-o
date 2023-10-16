@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/img/fondo.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.superior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.superior img {
+    padding: 20px;
+}
+
+.contener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: salir 1.5s linear infinite alternate;
+    -webkit-animation: salir 1.5s linear infinite alternate;
+
+}
+
+.contener h1 {
+    font-size: 50px;
+    font-family: Arial;
+    color: aliceblue;
+
+
+}
+
+.contener img {
+    object-fit: contain;
+}
+
+.rotar {
+    rotate: 90deg;
+}
+
+@keyframes salir {
+    to {
+
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes salir {
+    to {
+        opacity: 0;
+    }
+}
